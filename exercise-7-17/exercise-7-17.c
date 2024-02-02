@@ -4,10 +4,11 @@
 
 int main()
 {
-	char name[10];
+	const int size = 3;
+	char name[size];
 
 	printf("Who are you?");
-	fgets(name, 10, stdin);
+	fgets(name, size, stdin);
 	printf("Glad to meet you,%s.\n", name);
 	return 0;
 }
