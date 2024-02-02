@@ -11,7 +11,7 @@ int main()
 	f = 19.0;
 	d = 20000.009;
 
-	printf("%c\n%d\n%f\n%f\n", c, i, , f, d);
+	printf("%c\n%d\n%f\n%f\n", c, i, f, d);
 	return 0;
 }
 
