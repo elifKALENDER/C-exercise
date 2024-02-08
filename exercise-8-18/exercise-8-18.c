@@ -1,26 +1,27 @@
 #pragma warning(disable:4996)//scanf_s sorunu için
 
+
 #include <stdio.h>
 
 int main()
 {
-	int code;
+	char code;
 
-	printf("Enter the error code(1-3): ");
-	scanf("%d", &code);
+	printf("Enter the error letter(A,B,C":);
+	scanf("%c", &code);
 	switch (code)
 	{
-	case 1:
+	case 'A':
 		puts("Drive Fault,not your fault.");
 		break;
-	case 2:
-		puts("Illegal format, call a lawyer.");
+	case 'B':
+		puts("Illegal format,call a lawyer.");
 		break;
-	case 3:
+	case 'C':
 		puts("Bad filename, spank it.");
 		break;
 	default:
-		puts("That's not 1, 2, or 3");
+		puts("That's not A,B, or C")
 	}
 	return 0;
 }
