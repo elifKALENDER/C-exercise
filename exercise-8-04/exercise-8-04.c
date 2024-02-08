@@ -7,7 +7,7 @@ int main()
 	int first, second;
 
 	printf("Input the first value: ");
-	scanf("%d", &first);
+	scanf("%d", &first);//char hariç hepsinde & kullan
 	printf("Input the second value: ");
 	scanf("%d", &second);
 
