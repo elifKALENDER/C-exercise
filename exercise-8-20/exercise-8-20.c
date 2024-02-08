@@ -7,23 +7,26 @@ int main()
 	char choice;
 
 	puts("Meal Plans: ");
-	puts("A - Breakfast, Lumch, and Dinner");
+	puts("A - Breakfast, Lunch, and Dinner");
 	puts("B - Lunch and Dinner only");
-	puts("C- - Dinner only");
-	printf("Your choice: ");
+	puts("C- Dinner only");
+	printf("Your choice:  ");
 	scanf("%c",&choice);
 
 	printf("You've opted for ");
-	switch (choice) 
+	switch (choice)
 	{
 	case 'A':
+	case 'a':
 		printf("Breakfast, ");
 	case 'B':
+	case 'b':
 		printf("Lunch and ");
 	case 'C':
+	case 'c':
 		printf("Dinner ");
 	default:
-		printf("As your meal plan.\n");
+		printf("as your meal plan.\n");
 	}
-
+	return 0;
 }
