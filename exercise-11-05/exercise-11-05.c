@@ -4,17 +4,11 @@
 
 int main()
 {
-	int d;
+	int a,b;
 
-	d = -10;
-	while (d < 10) {
-		printf("%d", d);
-		d++;
-	}
-	while (d >= -10) {
-		printf("%d", d);
-		d--;
-	}
-	putchar('\n');
+	b = 16;
+	printf("Before, a is unsigned and b=%d\n", b);
+	a = b++;
+	printf("After, a=%d and b=%d\n", a, b);
 	return 0;
 }
