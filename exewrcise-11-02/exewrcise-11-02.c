@@ -10,5 +10,5 @@ int main()
 		puts("Get off my lawn you kids!");
 		x++;
 	}
-	return 0,
+	return 0;
 }
