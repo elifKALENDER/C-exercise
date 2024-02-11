@@ -8,15 +8,14 @@ int main()
 {
 	char password[] = "taco";
 	char input[15];
-	int match;
 
 	printf("Password: ");
 	scanf("%s", input);
 
-	match = strcmp(input, password);
-	if (match == 0)
-		puts("Password acepted");
+	if (strcmp(input, password) == 0)
+		puts("Password accepted");
 	else
-		puts("Invalid password.Alert teh authorities.");
+		puts("Invalid password.Alert the authorities.");
+
 	return 0;
 }
