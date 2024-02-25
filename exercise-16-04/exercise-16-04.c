@@ -30,7 +30,7 @@ int main()
 	president.birthday.month = 2;
 	president.birthday.day = 22;
 	president.birthday.year = 1732;
-	printf("%s %s born on %d/%d/%d\n", \,
+	printf("%s %s born on %d/%d/%d\n",\
 		president.name.first,
 		president.name.last,
 		president.birthday.month,
