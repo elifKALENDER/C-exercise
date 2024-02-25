@@ -17,7 +17,7 @@ int main()
 	};
 
 	printf("The first president was %s\n", first.name);
-	printf("He was inaugurated in %\n", first.year);
+	printf("He was inaugurated in %d\n", first.year);
 	printf("The second president in %s\n", second.name);
 	printf("He was inaugurated in %d\n", second.year);
 
