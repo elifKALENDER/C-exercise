@@ -1,6 +1,7 @@
 #pragma warning(disable:4996)//scanf_s sorunu için
 
 #include <stdio.h>
+
 int main()
 {
 	char string[] = ".does this string make me look fat?";
