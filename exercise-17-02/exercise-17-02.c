@@ -20,7 +20,7 @@ char* binbin(unsigned n)
 	static char bin[17];
 	int x;
 
-	for (x = 0; x < 16; x++),
+	for (x = 0; x < 16; x++)
 	{
 		bin[x] = n & 0x800 ? '1' : '0';
 	n <<= 1;
