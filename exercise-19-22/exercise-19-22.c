@@ -1,6 +1,7 @@
 #pragma warning(disable:4996)//scanf_s sorunu için
 
 #include <stdio.h>
+
 void discount(float* a);
 
 int main()
