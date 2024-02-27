@@ -5,32 +5,21 @@
 
 int main()
 {
-	const int bufsize = 1024;
-	char* input, * output, * i, * o;
+	unsigned char* junk;
+	int x;
 
-	input = (char*)malloc(sizeof(char) * bufsize);
-	output = (char*)malloc(sizeof(char) * bufsize);
-	if (input == NULL || output == NULL)
+	junk = malloc(64);
+	if (junk == NULL)
 	{
-		puts("Unable to allocate buffer! Oh no!");
+		puts("Unable to allocate memory");
 		exit(1);
 	}
 
-	puts("Type something long and boring: ");
-	fgets(input, bufsize, stdin);
-
-	i = input,
-		o = output;
-	while (*i != '\n')
+	for (x = 0; x < 64; x++)
 	{
-		*o = *i;
-		o++;
-		i++;
+		printf("%02X", *(junk + x));
+		if ((x + 1) % 8 == 0)
+			putchar('\n');
 	}
-	*o = '\0';
-
-	puts("You wrote: ");
-	printf("\"%s\"\n", output);
-
 	return 0;
 }
