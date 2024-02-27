@@ -4,16 +4,14 @@
 
 int main()
 {
-	char alphabet[26];
+	char alpha = 'A';
 	int x;
 	char* pa;
 
-	pa = alphabet;
+	pa = &alpha;
 
 	for (x = 0; x < 26; x++)
-	{
-		putchar(*pa++);
-	}
+		putchar((*pa)++);
 	putchar('\n');
 
 	return 0;
